@@ -1,0 +1,238 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>封面</title>
+    <link rel="stylesheet" href="wecss/paopao.css">
+    <link rel="stylesheet" href="wecss/quanping.css">
+    <link rel="shortcut icon" href="webimages/图标(2).jpg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="wecss/shizhong.css" media="all" />
+    <script type='text/javascript' src="js/jquery.js"></script>
+    <script type='text/javascript' src="js/shizhong.js"></script>
+    <style type="text/css">
+        #search ul {
+            list-style-type: none;
+            display: block;
+            width: 80px;
+            height: 33px;
+            margin: 0;
+            padding: 0;
+            border: 0px;
+            float: left;
+            font-size: 30px;
+            
+        }
+
+        }
+
+        #search li {
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            font-size: 30px;
+        }
+
+        #search .selected {
+            display: block;
+        }
+
+        #search form {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #search input {
+            height: 30px;
+            width: 200px;
+            margin: 0px;
+            border-radius: 30px;
+            opacity: 0.3;
+            transition: all 0.5s ease-in;
+        }
+
+        #search .maorx:hover {
+            height: 30px;
+            width: 400px;
+            margin: 0px;
+            border-radius: 30px;
+            opacity: 0.8;
+
+        }
+
+        #search .button {
+            font-size: 17px;
+            font-weight: 600;
+            color: #002D96;
+            height: 30px;
+            width: 100px;
+            margin-left: 50px;
+            background: #e6efc2;
+            opacity: 0.5;
+            cursor: pointer;
+            -webkit-border-radius: 2px;
+            border-radius: 10px;
+            
+        }
+
+        #showLogin1 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 20px;
+            -webkit-border-bottom-left-radius: 10px;
+            /*设置下左圆角边框*/
+            -webkit-border-top-left-radius: 10px;
+            /*设置上左圆角边框*/
+            -webkit-border-top-right-radius: 10px;
+            /*设置上右圆角边框*/
+            -webkit-border-bottom-right-radius: 10px;
+            /*设置下右圆角边框*/
+            opacity: 0.7;
+            transition: all 0.5s
+        }
+
+        #showLogin2 {
+            position: absolute;
+            top: 20px;
+            right: 80px;
+            font-size: 20px;
+            -webkit-border-bottom-left-radius: 10px;
+            /*设置下左圆角边框*/
+            -webkit-border-top-left-radius: 10px;
+            /*设置上左圆角边框*/
+            -webkit-border-top-right-radius: 10px;
+            /*设置上右圆角边框*/
+            -webkit-border-bottom-right-radius: 10px;
+            /*设置下右圆角边框*/
+            opacity: 0.7;
+            transition: all 0.5s
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="web_bg" style="background-image: url(webimages/zhuyebg5.jpg); "></div>
+
+        <p>&nbsp;</p>
+        <div id="search" align="center">
+            <table>
+                <tr>
+                    <td>
+                        <ul>
+                            <li style="display:block;">baidu</li>
+                            <li style="display:none;">google</li>
+                            <li style="display:none;">steam</li>
+                        </ul>
+                    </td>
+                    <td id="from_box" style="padding-left:10px;">
+                        <form id="from_baidu" style="display:block" action="http://www.baidu.com/baidu" target="_blank"
+                            method="get">
+                            <input type="text" name="word" class="maorx" placeholder="Search" style="text-align:center">
+                            <input class="button" type="submit" value="百度一下" onMouseOver="this.style.opacity='1'"
+                                onMouseOut="this.style.opacity='0.7'" />
+                        </form>
+                        <form id="from_google" style="display:none" action="http://www.google.com/search"
+                            target="_blank" method="get">
+                            <input type="text" name="q" class="maorx" placeholder="Search" style="text-align:center">
+                            <input class="button" type="submit" value="google " onMouseOver="this.style.opacity='1'"
+                                onMouseOut="this.style.opacity='0.7'" />
+                        </form>
+                        <form id="from_steam" style="display:none" action="https://store.steampowered.com/search"
+                            target="_blank" method="get">
+                            <input type="text" name="term" class="maorx" placeholder="Search" style="text-align:center">
+                            <input class="button" type="submit" value=" steam " onMouseOver="this.style.opacity='1'"
+                                onMouseOut="this.style.opacity='0.7'" />
+                        </form>
+
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="box1">
+            <div class="pm"></div>
+            <img src="webimages/s.png" />
+            <img src="webimages/f.png" />
+            <img class="mz" src="webimages/m.png" />
+        </div>
+        <div>
+            <button type="button" id="showLogin1" onMouseOver="this.style.opacity='1'"
+                onMouseOut="this.style.opacity='0.7'"><a href="wehtml\登入.html" style="text-decoration:none">登录</a>
+                <button type="button" id="showLogin2" onMouseOver="this.style.opacity='1'"
+                    onMouseOut="this.style.opacity='0.7'"><a href="wehtml\注册.html" style="text-decoration:none">注册</a>
+        </div>
+        <script src="js/paopao.js"></script>
+        <script type="text/javascript">
+            var search = document.getElementById("search");
+            var formbox = document.getElementById('from_box');
+            var forms = formbox.getElementsByTagName("form");
+            var ul = search.getElementsByTagName("ul")[0];
+            var li = ul.getElementsByTagName("li");
+            var length = li.length;
+            li[0].onclick = function () {
+                for (var i = 1; i < length; i++) {
+                    li[i].style.display = "block";
+                }
+            }
+            var n = 0; //
+            for (var i = 1; i < length; i++) {
+                li[i].onclick = function (a) {
+                    return function () {
+                        //
+                        var temp = li[0].innerHTML;
+                        li[0].innerHTML = this.innerHTML;
+                        this.innerHTML = temp;
+                        for (var j = 1; j < length; j++) {
+                            li[j].style.display = "none";
+                        }
+                        //
+                        //alert(li[0].innerHTML.substring(37,7));
+                        //alert(li[0].innerHTML.indexOf('baidu'));
+                        hidden_from(); //
+                        //console.log(li[0]);
+                        if (li[0].innerHTML.indexOf('baidu') == 0) {
+                            document.getElementById('from_baidu').style.display = 'block';
+                        } else if (li[0].innerHTML.indexOf('google') == 0) {
+                            document.getElementById('from_google').style.display = 'block';
+                        } else if (li[0].innerHTML.indexOf('steam') == 0) {
+                            document.getElementById('from_steam').style.display = 'block';
+                        }
+                        //alert(this.innerHTML);
+                        //forms[n].style.display = "none";
+                        //forms[a].style.display = "block";
+                        //n = a;
+                    }
+                }(i);
+                li[i].onmouseover = function () {
+                    this.style.border = "#7fb80e 1px solid";
+                    this.style.background = "#f2eada";
+                }
+                li[i].onmouseout = function () {
+                    this.style.border = "0px";
+                    this.style.background = "inherit";
+                }
+            }
+            //��������������ĺ���
+            function hidden_from() {
+                for (var j = 0; j < forms.length; j++) {
+                    forms[j].style.display = "none";
+                }
+            }
+
+
+            let maorx = document.querySelector(".maorx");
+            maorx.onfocus = function () {
+                document.querySelector("#web_bg").style.filter = "blur(10px)";
+            }
+            maorx.onblur = function () {
+                document.querySelector("#web_bg").style.filter = "blur(0px)";
+            }
+        </script>
+
+</body>
+
+</html>
