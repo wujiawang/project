@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../wecss/登入.css">
+    <link rel="stylesheet" href="../wecss/登入2.css">
+    <link rel="shortcut icon" href="../webimages/图标(2).jpg" type="image/x-icon">
+    <script src="../js/jquery/jquery-3.4.1.js"></script>
+    <script src="../js/register.js"></script>
+    <style>
+        #jump {
+            display: block;
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+    <script type="text/javascript">
+        // 页面加载完成之后
+        $(function () {
+            // 给注册绑定单击事件
+            $("button.sub_btn").click(function () {
+                // 验证密码：必须长度为8到12位
+                //1 获取用户名输入框里的内容
+                var passwordText = $("#password").val();
+                //2 创建正则表达式对象
+                var passwordPatt = /^\w{8,15}$/;
+                //3 使用test方法验证
+                if (!passwordPatt.test(passwordText)) {
+                    //4 提示用户结果
+                    $("span.errorMsg").text("密码不合法！（请输入8到15位密码）");
+
+                    return false;
+                }
+
+                // 验证确认密码：和密码相同
+                //1 获取确认密码内容
+                var repwdText = $("#repwd").val();
+                //2 和密码相比较
+                if (repwdText != passwordText) {
+                    //3 提示用户
+                    $("span.errorMsg").text("确认密码和密码不一致！");
+
+                    return false;
+                }
+
+                // 邮箱验证：xxxxx@xxx.com
+                //1 获取邮箱里的内容
+                var emailText = $("#email").val();
+                //2 创建正则表达式对象
+                var emailPatt = /^[a-z\d]+(\.[a-z\d]+)*@([\da-z](-[\da-z])?)+(\.{1,2}[a-z]+)+$/;
+                //3 使用test方法验证是否合法
+                if (!emailPatt.test(emailText)) {
+                    //4 提示用户
+                    $("span.errorMsg").text("邮箱格式不合法！");
+
+                    return false;
+                }
+
+                $("span.errorMsg").text("");
+
+
+            });
+        });
+    </script>
+    <title>注册界面</title>
+    </title>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="register_header w">
+        <div class="logo">
+            <h1>
+                <a href="../index.html">返回封面</a>
+            </h1>
+        </div>
+    </div>
+    <!-- 头部 -->
+
+    <!-- main开始 -->
+    <div class="main w">
+        <div class="main_header">
+            <h3>注册新用户</h3>
+            <p>我有账号，去<a href="登入.html">登录</a></p>
+        </div>
+        <div class="main_content">
+            <form action="demo.php">
+                <table border="0" cellspacing='0' cellpadding='0' align="center">
+                    <tr>
+                        <td>手机号：</td>
+                        <td>
+                            <input type="text" id="phone" class="txt">
+                            <em></em>
+                            <span></span>
+                        </td>
+                    </tr>
+                    </br>
+                    </br>
+                    <tr>
+                        <td>电子邮件：</td>
+                        <td>
+                            <input type="text" id="email" class="txt" name="email">
+                            <em></em>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>登录密码：</td>
+                        <td>
+                            <section>
+                                <input type="password" id="password" class="txt" maxlength="15" name="password">
+                                <b></b>
+                            </section>
+                            <em></em>
+                            <span></span>
+                        </td>
+                    </tr>
+
+                    </br>
+                    </br>
+                    <tr>
+                        <td>确认密码：</td>
+                        <td>
+                            <div>
+                                <input type="password" id="repwd" class="txt" maxlength="15" name="repwd">
+                                <b></b>
+                            </div>
+                            <em></em>
+                            <span></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" id="read">同意协议并注册
+                            <a href="https://passport.baidu.com/static/passpc-account/html/protocal.html">《用户协议》</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <div style="background-color: red; text-align: center;width: 100px; height: 30px;">
+
+
+                                <button value="注册" class="sub_btn"
+                                    style="color:white; outline: none; border: none; background-color: red; line-height: 30px; width: 100px; font-size: medium;"><a
+                                        id="jump" href="登入.html" style="color:white;">注册</a></button>
+                            </div>
+                        </td>
+                        <td><span class="errorMsg" style="color:red; font-size: 20px;"></span></td>
+                    </tr>
+
+                </table>
+            </form>
+        </div>
+    </div>
+    <!-- main结束 -->
+
+
+
+
+</body>
+
+</html>

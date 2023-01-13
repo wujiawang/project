@@ -1,0 +1,118 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../webimages/gameview13.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+background-color: rgb(251, 253, 255);
+
+.box {
+  width: 1520px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  outline: none;
+}
+
+.box2 {
+  width: 1200px;
+  margin: 0 auto;
+  position: absolute;
+  top: 0px;
+  right: 10%;
+  -webkit-border-bottom-left-radius: 10px;
+  /*设置下左圆角边框*/
+  -webkit-border-top-left-radius: 10px;
+  /*设置上左圆角边框*/
+  -webkit-border-top-right-radius: 10px;
+  /*设置上右圆角边框*/
+  -webkit-border-bottom-right-radius: 10px;
+  /*设置下右圆角边框*/
+}
+
+.box2 table {
+  margin: 0 auto;
+  border-spacing: 0;
+  background-color: aliceblue;
+  position: relative;
+  left: 11%;
+  border-collapse: collapse;
+}
+
+.box2 caption {
+  font-size: 50px;
+  color: rgb(97, 188, 234);
+}
+
+.box2 tr th {
+  color: black;
+}
+
+.box2 tr th img {
+  width: 240px;
+  align-items: center;
+
+}
+
+
+img:hover {
+  box-shadow: 0 8px 8px 0;
+  transform: translate(0, -10px)
+}
+
+.rnav {
+  position: fixed;
+  bottom: 10px;
+  right: 5px;
+}
+
+menu {
+  width: 30px;
+  /*设置元素宽度*/
+  list-style: none;
+  /*设置列表无样式*/
+  position: absolute;
+  /*设置定位属性*/
+  left: -30px;
+}
+
+.menu li {
+  margin-top: 24px;
+  /*设置元素上外边距*/
+  list-style: none;
+}
+
+.menu li a {
+  display: block;
+  /*设置为块级元素*/
+  font-weight: 800;
+  width: 120px;
+  /*设置元素宽度*/
+  font-size: 14px;
+  /*设置文字大小*/
+  text-decoration: none;
+  color: black;
+  /*设置文字颜色*/
+  padding: 10px 15px 10px 12px;
+  /*设置内边距*/
+  -webkit-border-top-right-radius: 10px;
+  /*设置上右圆角边框*/
+  -webkit-border-bottom-right-radius: 10px;
+  /*设置下右圆角边框*/
+  -webkit-transition: padding 0.7s;
+  /*设置过渡效果*/
+}
+
+.tiaozi {
+  text-align: center;
+  display: block;
+  background-color: #65A8DF;
+  clear: both;
+  color: white;
+  font-size: larger;
+  height: 30px;
+}

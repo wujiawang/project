@@ -1,0 +1,140 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>科幻微小说征文申请</title>
+    <link rel="shortcut icon" href="../webimages/图标(2).jpg" type="image/x-icon">
+    <link href="../mycss.css" rel="stylesheet" type="text/css">
+    <style>
+        fieldset {
+            margin: 50px auto;
+            padding: 20px;
+            width: 500px;
+            border: 1px dashed black;
+            -webkit-border-bottom-left-radius: 5px;
+            /*设置下左圆角边框*/
+            -webkit-border-top-left-radius: 5px;
+            /*设置上左圆角边框*/
+            -webkit-border-top-right-radius: 5px;
+            /*设置上右圆角边框*/
+            -webkit-border-bottom-right-radius: 5px;
+            /*设置下右圆角边框*/
+            overflow: hidden;
+        }
+
+        .text {
+            width: 150px;
+            -webkit-border-bottom-left-radius: 5px;
+            /*设置下左圆角边框*/
+            -webkit-border-top-left-radius: 5px;
+            /*设置上左圆角边框*/
+            -webkit-border-top-right-radius: 5px;
+            /*设置上右圆角边框*/
+            -webkit-border-bottom-right-radius: 5px;
+            /*设置下右圆角边框*/
+            overflow: hidden;
+        }
+
+        .legend {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        #tijiao {
+            margin-left: 45%;
+            text-align: center;
+            font-size: 30px;
+            -webkit-border-bottom-left-radius: 10px;
+            /*设置下左圆角边框*/
+            -webkit-border-top-left-radius: 10px;
+            /*设置上左圆角边框*/
+            -webkit-border-top-right-radius: 10px;
+            /*设置上右圆角边框*/
+            -webkit-border-bottom-right-radius: 10px;
+            /*设置下右圆角边框*/
+        }
+
+        select {
+            width: 150px;
+            -webkit-border-bottom-left-radius: 10px;
+            /*设置下左圆角边框*/
+            -webkit-border-top-left-radius: 10px;
+            /*设置上左圆角边框*/
+            -webkit-border-top-right-radius: 10px;
+            /*设置上右圆角边框*/
+            -webkit-border-bottom-right-radius: 10px;
+            /*设置下右圆角边框*/
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div id="header">
+        <div id="rightfloat"><a href="../index.html"></a></div>
+
+        <div class="tiaozi">
+            <p class="left"><a href="../main.html">首页</a>＞<strong>信息登记</strong></p>
+        </div><br>
+        <h2 style="color: black;">
+            <center>网站信息登记</center>
+        </h2>
+
+        <form>
+            <fieldset>
+                <p>1.姓名：<input class="text" /></p>
+                <p>2.邮箱：<input class="text" /></p>
+                <p>3.电话：<input class="text" /></p>
+                <p>4.&nbsp;QQ：<input class="text" /></p>
+                <p>5.性别：<input type="radio" name="sex" id="man" /><label for="man">男</label>
+                    <input type="radio" name="sex" id="woman" /><label for="woman">女</label>
+                </p>
+                <p>6.年龄：<select>
+                        <option>0-10岁</option>
+                        <option>10-18岁</option>
+                        <option>18-29岁</option>
+                        <option>30岁及以上</option>
+                    </select></p>
+                <p>7.工作类型：</p>
+                <p><input type="checkbox" id="tai" /><label
+                        for="tai">专业技术类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="checkbox" id="wei" /><label
+                        for="wei">军人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="checkbox" id="fan" /><label
+                        for="fan">公务办事人员和有关人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="checkbox" id="mo" /><label
+                        for="mo">商业，服务业人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="checkbox" id="mo" /><label for="mo">农业生产人员&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="checkbox" id="mo" /><label for="mo">在校师生&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                    <input type="checkbox" id="qi" /><label for="qi">其他</label>
+                </p>
+                <p>8.请选择你的爱好</p>
+                <form>
+                    <input type="checkbox" name="vehicle" value="&#127908">&#127908
+
+                    <input type="checkbox" name="vehicle" value="&#127918">&#127918
+
+                    <input type="checkbox" name="vehicle" value="&#127939">&#127939
+
+                    <input type="checkbox" name="vehicle" value="&#127936">&#127936
+
+                    <input type="checkbox" name="vehicle" value="&#128181">&#128181
+                </form>
+                <p>9.对本网站的建议：<textarea name="neirong" rows="5" cols="100" style="
+         -webkit-border-bottom-left-radius:10px;
+         /*设置下左圆角边框*/ 
+         -webkit-border-top-left-radius: 10px;
+          /*设置上左圆角边框*/ 
+          -webkit-border-top-right-radius: 10px;
+            /*设置上右圆角边框*/
+            -webkit-border-bottom-right-radius: 10px;
+            /*设置下右圆角边框*/
+            overflow: hidden;"></textarea></p>
+                <input type="submit" value="提交" id="tijiao" onclick="alert('恭喜你，提交成功！感谢您的宝贵建议&#128536')" />
+            </fieldset>
+        </form>
+</body>
+
+</html>

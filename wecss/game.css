@@ -1,0 +1,69 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-image: url("../webimages/gameview4.jpg");
+	background-attachment: fixed;
+	background-size: cover;
+    cursor:url("../webimages/mycur.png"),auto;
+}
+.box0{
+	width: 1520px;
+}
+a{
+	color: white;
+	text-decoration: none;
+	outline: none;
+}
+.nav ul {
+	Width:100%;    
+	height:55px;      
+	margin:0px auto;
+	padding:0;
+	list-style:none; 
+	border-top:solid 5px  rgba(39, 21, 21, 0.4);  
+	border-bottom:solid 5px  rgba(39, 21, 21, 0.4) ;
+	background: rgba(160,160,160,0.2);
+}
+.nav ul li {
+	width:14.2%;
+	float:left;
+	text-align:center;
+	font:16px/2.5 "microsoft yahei";
+}
+.nav ul li a {
+	font-size: 22px;
+	color:#705628;
+	text-decoration:none;
+}
+.nav ul li a:hover {
+	display:block; 
+	color:#FFFFFF; 
+	background:#d5c59f;
+}
+.box{
+	width: 100%;
+	height: 1080px;
+}
+.box1{
+	width: 70%;
+	padding: 20px 20px 20px 40px;
+	float: left;
+	background: rgba(160,160,160,0.2);
+	border: 2px #705628 solid;
+}
+.STYLE7{
+	padding: 2px 2px 2px 2px;
+	color:black;
+	font-weight: 550;
+}
+.STYLE7 a {
+	color: #009ad6;
+	font-weight: 900;
+}
+.box2{
+	width: 21%;
+	padding: 20px 20px 20px 40px;
+	float: right;
+	background: rgba(160,160,160,0.2);
+	border: 2px #705628 solid;
+}
